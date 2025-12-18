@@ -46,3 +46,7 @@ variable "egress_to_port" {
 variable "protocol" {
     default = "-1"
 }
+
+variable "console_input" {
+    
+}
