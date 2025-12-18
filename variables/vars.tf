@@ -48,5 +48,6 @@ variable "protocol" {
 }
 
 variable "console_input" {
-    
+    type = list(string)
+    description = "Enter the names you want to add: "
 }
