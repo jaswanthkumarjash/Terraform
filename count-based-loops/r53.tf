@@ -1,4 +1,4 @@
-resource "aws_route53_record" "roboshop" {
+resource "aws_route53_record" "roboshop_1" {
   count   = length(var.instances)
   zone_id = "${var.hosted_zone_id}"
   name    = "${var.instances[count.index]}.${var.domain_name}"
