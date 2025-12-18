@@ -1,5 +1,6 @@
 variable "instances" {
-    default = ["mongodb", "redis", "mysql", "rabbitmq"]
+    type = list(string)
+    description = "Enter the server names you want to create in this format ['a', 'b'] : "
 }
 
 variable "domain_name" {
